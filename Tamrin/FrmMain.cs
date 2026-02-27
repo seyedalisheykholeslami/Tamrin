@@ -12,10 +12,10 @@ using Tamrin.service;
 
 namespace Tamrin
 {
-    public partial class FrmRegister : Form
+    public partial class FrmMain : Form
     {
         PersonService personService;
-        public FrmRegister()
+        public FrmMain()
         {
             InitializeComponent();
             personService = new PersonService();
@@ -23,7 +23,7 @@ namespace Tamrin
 
         private void btnEntry_Click(object sender, EventArgs e)
         {
-            personService.Add(new Person
+            var result = personService.Add(new PersonDTO
             {
             FirstName= txtFirstName.Text,
             LastName= txtLastName.Text,
@@ -32,6 +32,13 @@ namespace Tamrin
             UserName = txtUserName.Text,
             Password = txtPassword.Text
             });
+            if (result.IsSuccess)
+            {
+                txtFirstName.Text = txtLastName.Text = txtNationalCode.Text
+                = txtPassword.Text = txtUserName.Text =cbxRole.Text= "";
+            }
+            MessageBox.Show(result.Message);
+
         }
     }
 }

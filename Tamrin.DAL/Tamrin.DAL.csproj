@@ -54,6 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202602271256380_init.cs" />
+    <Compile Include="Migrations\202602271256380_init.Designer.cs">
+      <DependentUpon>202602271256380_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202602271424250_set property field.cs" />
+    <Compile Include="Migrations\202602271424250_set property field.Designer.cs">
+      <DependentUpon>202602271424250_set property field.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PersonRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolDBContext.cs" />
@@ -67,6 +76,14 @@
       <Project>{ca728988-aa8f-46a9-be77-73c3e528e309}</Project>
       <Name>Tamrin.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202602271256380_init.resx">
+      <DependentUpon>202602271256380_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202602271424250_set property field.resx">
+      <DependentUpon>202602271424250_set property field.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -12,7 +12,11 @@ namespace Tamrin.service
         public string Message { get; set; }
         public static OperationResult Success()
         {
-            return new OperationResult { IsSuccess = true };
+            return new OperationResult
+            {
+                IsSuccess = true,
+                Message = "عملیات با موفقیت انجام شد"
+            };
         }
         public static OperationResult Failed(string message)
         {

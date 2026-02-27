@@ -1,6 +1,6 @@
 ﻿namespace Tamrin
 {
-    partial class FrmRegister
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
