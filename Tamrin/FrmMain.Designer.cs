@@ -45,11 +45,11 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(14, 12);
+            this.txtFirstName.Location = new System.Drawing.Point(14, 14);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(5);
             this.txtFirstName.Multiline = true;
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(214, 42);
+            this.txtFirstName.Size = new System.Drawing.Size(214, 36);
             this.txtFirstName.TabIndex = 0;
             // 
             // txtLastName
@@ -58,25 +58,25 @@
             this.txtLastName.Margin = new System.Windows.Forms.Padding(5);
             this.txtLastName.Multiline = true;
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(214, 42);
+            this.txtLastName.Size = new System.Drawing.Size(214, 36);
             this.txtLastName.TabIndex = 1;
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(14, 236);
+            this.txtUserName.Location = new System.Drawing.Point(14, 244);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(5);
             this.txtUserName.Multiline = true;
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(214, 42);
+            this.txtUserName.Size = new System.Drawing.Size(214, 36);
             this.txtUserName.TabIndex = 2;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(14, 293);
+            this.txtPassword.Location = new System.Drawing.Point(14, 302);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(214, 42);
+            this.txtPassword.Size = new System.Drawing.Size(214, 36);
             this.txtPassword.TabIndex = 3;
             // 
             // txtNationalCode
@@ -85,7 +85,7 @@
             this.txtNationalCode.Margin = new System.Windows.Forms.Padding(5);
             this.txtNationalCode.Multiline = true;
             this.txtNationalCode.Name = "txtNationalCode";
-            this.txtNationalCode.Size = new System.Drawing.Size(214, 42);
+            this.txtNationalCode.Size = new System.Drawing.Size(214, 36);
             this.txtNationalCode.TabIndex = 4;
             // 
             // label1
@@ -171,7 +171,7 @@
             this.cbxRole.Size = new System.Drawing.Size(214, 37);
             this.cbxRole.TabIndex = 15;
             // 
-            // FrmRegister
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +191,7 @@
             this.Controls.Add(this.txtFirstName);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FrmRegister";
+            this.Name = "FrmMain";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
